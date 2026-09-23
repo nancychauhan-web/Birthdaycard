@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BACKGROUND PARTICLES
+    ========================== -->
+
+    <div id="particles"></div>
+
+
+    <!-- =========================
+         SECRET OPENING SCREEN
+    ========================== -->
+
+    <section id="lockScreen" class="screen active">
+
+        <div class="lock-card">
+
+            <div class="lock-icon">
+                🔐
+            </div>
+
+            <p class="small-text">
+                A little secret awaits...
+            </p>
+
+            <h1>
+                Unlock My Birthday Surprise
+            </h1>
+
+            <p class="hint">
+                Enter the secret code ❤️
+            </p>
+
+            <input
+                type="password"
+                id="secretInput"
+                maxlength="6"
+                placeholder="••••••"
+            >
+
+            <button id="unlockBtn">
+                Unlock Surprise ✨
+            </button>
+
+            <p id="errorMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MAIN WEBSITE
+    ========================== -->
+
+    <main id="mainContent" class="hidden">
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    ✨ A special day for a special person ✨
+                </p>
+
+                <h1>
+                    Happy
+                    <span>Birthday</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Today is all about celebrating you,
+                    your smile and all the beautiful memories
+                    we have created together.
+                </p>
+
+                <button class="primary-btn"
+                        onclick="scrollToSection('countdown')">
+                    Begin The Journey
+                    <span>↓</span>
+                </button>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span></span>
+                Scroll
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             COUNTDOWN
+        ========================== -->
+
+        <section id="countdown" class="section countdown-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    ⏳ The special moment
+                </p>
+
+                <h2>
+                    Counting Every Second
+                </h2>
+
+                <p>
+                    Until your special birthday moment...
+                </p>
+
+            </div>
+
+
+            <div class="countdown-container">
+
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>Days</small>
+                </div>
+
+                <div class="colon">:</div>
+
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Hours</small>
+                </div>
+
+                <div class="colon">:</div>
+
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Minutes</small>
+                </div>
+
+                <div class="colon">:</div>
+
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Seconds</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BALLOON SECTION
+        ========================== -->
+
+        <section class="section balloon-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    🎈 Little surprises
+                </p>
+
+                <h2>
+                    Pop The Balloons
+                </h2>
+
+                <p>
+                    Every balloon hides a little message.
+                </p>
+
+            </div>
+
+
+            <div class="balloon-container">
+
+                <div class="balloon"
+                     data-message="You deserve all the happiness in the world ❤️">
+                    <div class="balloon-body">🎈</div>
+                </div>
+
+                <div class="balloon"
+                     data-message="Keep smiling because your smile is beautiful ✨">
+                    <div class="balloon-body">🎈</div>
+                </div>
+
+                <div class="balloon"
+                     data-message="May every dream of yours come true 🌙">
+                    <div class="balloon-body">🎈</div>
+                </div>
+
+                <div class="balloon"
+                     data-message="Another beautiful year of memories begins 🎂">
+                    <div class="balloon-body">🎈</div>
+                </div>
+
+                <div class="balloon"
+                     data-message="You are more special than you know 💕">
+                    <div class="balloon-body">🎈</div>
+                </div>
+
+            </div>
+
+
+            <div id="balloonMessage"
+                 class="balloon-message">
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MEMORY SECTION
+        ========================== -->
+
+        <section class="section memories-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    📸 Our memories
+                </p>
+
+                <h2>
+                    Little Moments,
+                    Big Memories
+                </h2>
+
+                <p>
+                    Some moments deserve to be remembered forever.
+                </p>
+
+            </div>
+
+
+            <div class="memory-grid">
+
+                <div class="memory-card card-one">
+                    <div class="memory-image image-one">
+                        <img src="img1.jpeg" alt="" height="350px" width="450px" object-fit="cover">
+                        <span></span>
+                    </div>
+
+                    <div class="memory-info">
+                        <h3>
+                            Beautiful Moments
+                        </h3>
+
+                        <p>
+                            Every moment becomes special
+                            when shared with the right person.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="memory-card card-two">
+                    <div class="memory-image image-two">
+                     <img src="img2.jpeg" alt="" height="350px" width="450px" object-fit="cover">
+
+                        <span></span>
+                    </div>
+
+                    <div class="memory-info">
+                        <h3>
+                            Endless Smiles
+                        </h3>
+
+                        <p>
+                            Some memories never fade.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="memory-card card-three">
+                    <div class="memory-image image-three">
+                     <img src="img3.jpeg" alt="" height="350px" width="450px" object-fit="cover">
+
+                        <span></span>
+                    </div>
+
+                    <div class="memory-info">
+                        <h3>
+                            Forever Memories
+                        </h3>
+
+                        <p>
+                            Here's to many more beautiful days.
+                        </p>
+                    </div>
+                </div>
+
+
+                
+
+            
+            </div>
+
+
+
+
+
+        </section>
+
+
+        <!-- =========================
+             VIDEO SECTION
+        ========================== -->
+
+        <section class="section video-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    🎬 A little movie
+                </p>
+
+                <h2>
+                    Our Story In Motion
+                </h2>
+
+                <p>
+                    Press play and relive the memories.
+                </p>
+
+            </div>
+
+
+            <div class="video-wrapper">
+
+                <video
+                    id="birthdayVideo"
+                    controls
+                    playsinline
+                    preload="metadata">
+
+                    <source
+                        src="aasthabirthday.MP4"  
+                        type="video/mp4" >
+                     
+                    Your browser does not support video.
+                </video>
+
+                <div class="video-glow"> </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LETTER
+        ========================== -->
+
+        <section class="section letter-section">
+
+            <div class="letter">
+
+                <div class="letter-decoration">
+                    ✦
+                </div>
+
+                <p class="eyebrow">
+                    💌 From my heart
+                </p>
+
+                <h2>
+                    A Letter For You
+                </h2>
+
+
+                <div id="letterText" class="letter-text">
+
+                    <p>
+                        Today isn't just another day.
+                    </p>
+
+                    <p>
+                        It's a reminder of how lucky we are
+                        to have beautiful people in our lives.
+                    </p>
+
+                    <p>
+                        I hope this new chapter brings you
+                        countless smiles, peaceful moments,
+                        exciting adventures and everything
+                        your heart wishes for.
+                    </p>
+
+                    <p>
+                        Keep being the wonderful person you are.
+                    </p>
+
+                    <p class="signature">
+                        With lots of love ❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONSTELLATION
+        ========================== -->
+
+        <section class="section stars-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    ⭐ Make a wish
+                </p>
+
+                <h2>
+                    Your Little Constellation
+                </h2>
+
+                <p>
+                    Click the stars and make a wish.
+                </p>
+
+            </div>
+
+
+            <div class="stars-container">
+
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+                <span class="star">✦</span>
+
+            </div>
+
+            <p id="wishMessage"
+               class="wish-message">
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             HEART SECTION
+        ========================== -->
+
+        <section class="section heart-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    ❤️ One final surprise
+                </p>
+
+                <h2>
+                    Send Some Love
+                </h2>
+
+                <p>
+                    Click the heart 20 times.
+                </p>
+
+            </div>
+
+
+            <div class="heart-area">
+
+                <button id="heartButton"
+                        class="big-heart">
+                    ❤️
+                </button>
+
+                <div id="heartCounter">
+                    0 / 20
+                </div>
+
+            </div>
+
+
+            <div id="finalMessage"
+                 class="final-message">
+
+                <h2>
+                    Happy Birthday! 🎂
+                </h2>
+
+                <p>
+                    May your life always be filled with
+                    love, happiness and beautiful memories.
+                </p>
+
+                <button
+                    onclick="createConfetti()"
+                    class="primary-btn">
+                    Celebrate 🎉
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer>
+
+            <div class="footer-heart">
+                ♥
+            </div>
+
+            <h3>
+                Made With Love
+            </h3>
+
+            <p>
+                For someone very special ❤️
+            </p>
+
+            <small>
+                © 2026 Birthday Memories
+            </small>
+
+        </footer>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
