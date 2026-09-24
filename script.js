@@ -2,7 +2,7 @@
    SETTINGS
 ===================================== */
 
-const SECRET_CODE = "7104git";
+const SECRET_CODE = "704git";
 
 /*
    Apni birthday date yahan change karo.
